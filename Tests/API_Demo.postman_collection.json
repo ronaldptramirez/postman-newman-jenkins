@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "db2b392d-77ab-4297-a093-b1d41334f215",
+		"name": "API_Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "retrieveAccountDetails",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "XCsSbHtlq24zRyIAXZBJyAGyuGUT",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "accountId",
+						"value": "1002",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{apigee_hostname}}/demo/v1/bank/account",
+					"host": [
+						"{{apigee_hostname}}"
+					],
+					"path": [
+						"demo",
+						"v1",
+						"bank",
+						"account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "retrieveCreditCardDetails",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "creditCardNo",
+						"type": "text",
+						"value": "1111000022220005"
+					}
+				],
+				"url": {
+					"raw": "{{apigee_hostname}}/demo/v1/creditcard/account",
+					"host": [
+						"{{apigee_hostname}}"
+					],
+					"path": [
+						"demo",
+						"v1",
+						"creditcard",
+						"account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "retrieveInsuranceDetails",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "insuranceId",
+						"type": "text",
+						"value": "100001"
+					}
+				],
+				"url": {
+					"raw": "{{apigee_hostname}}/demo/v1/insurance/account",
+					"host": [
+						"{{apigee_hostname}}"
+					],
+					"path": [
+						"demo",
+						"v1",
+						"insurance",
+						"account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "retrieveFinancialDetails",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accountId",
+						"type": "text",
+						"value": "1002"
+					}
+				],
+				"url": {
+					"raw": "{{apigee_hostname}}/demo/v1/financials",
+					"host": [
+						"{{apigee_hostname}}"
+					],
+					"path": [
+						"demo",
+						"v1",
+						"financials"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "accessToken",
+				"value": "6F1CgRtN4QrTAgGvA2PuNpht1RTl",
+				"type": "string"
+			},
+			{
+				"key": "tokenType",
+				"value": "BearerToken",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "ec9d1caa-b3f0-4af8-89ec-be5f04dcb673",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "c57d4551-9e7b-4deb-8db1-aa3f929a71f4",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "1dd55eb7-66e9-428f-bd4e-f8945ecb6685",
+			"key": "apigee_hostname",
+			"value": "http://ronaldptramirez-eval-test.apigee.net"
+		},
+		{
+			"id": "fd6bb4f9-e40f-4d41-8239-7a3f5e1e7531",
+			"key": "client_id",
+			"value": " byMVko2zCRgyWtYcFszP3uhgO640mApG"
+		},
+		{
+			"id": "15dde7df-89c0-4bf0-b71c-1af43f63e919",
+			"key": "client_secret",
+			"value": "5nwWPSlXt4GAmXMI"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
