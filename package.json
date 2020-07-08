@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Project for storing Postman tests",
   "directories": {
-    "test":"Test"
+    "test":"Tests"
   },
   "scripts": {
-    "api-production": "newman run tests/API_Demo.postman_collection.json --reporters junit --reporter-junit-export newman.xml"
+    "api-production": "newman run Tests/API_Demo.postman_collection.json --reporters junit --reporter-junit-export newman.xml"
   },
   "author": "Paolo Ramirez",
   "dependencies": {
