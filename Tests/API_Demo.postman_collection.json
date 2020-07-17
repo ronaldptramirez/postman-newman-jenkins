@@ -7,13 +7,27 @@
 	"item": [
 		{
 			"name": "retrieveAccountDetails",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0386c8d0-d111-4f22-9939-73fde4c92b6b",
+						"exec": [
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"auth": {
 					"type": "bearer",
 					"bearer": [
 						{
 							"key": "token",
-							"value": "XCsSbHtlq24zRyIAXZBJyAGyuGUT",
+							"value": "cEPyQrAqalHTgGGAwzvCUGsyavPg",
 							"type": "string"
 						}
 					]
@@ -43,7 +57,31 @@
 		},
 		{
 			"name": "retrieveCreditCardDetails",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e64142cf-6850-470c-93ad-86ebaafcfd44",
+						"exec": [
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "s5L8LFZcd9ZELmxfKpiEpAcAfTPx",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [
 					{
@@ -69,7 +107,31 @@
 		},
 		{
 			"name": "retrieveInsuranceDetails",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "799ddb89-cc3e-42d6-a9a0-532cf3115764",
+						"exec": [
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "aUXAcbmF815QGT37thJ5XbMMrWMP",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [
 					{
@@ -95,7 +157,31 @@
 		},
 		{
 			"name": "retrieveFinancialDetails",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b2e30fb2-facf-469a-bfff-7ffe3ad58a30",
+						"exec": [
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "uNxHDvdVmI1bmOGRRqsM98aPvmp3",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [
 					{
@@ -163,17 +249,17 @@
 	],
 	"variable": [
 		{
-			"id": "1dd55eb7-66e9-428f-bd4e-f8945ecb6685",
+			"id": "9cc78f26-4987-4bdc-ae4e-fcbb07924324",
 			"key": "apigee_hostname",
-			"value": "http://ronaldptramirez-eval-test.apigee.net"
+			"value": "https://ronaldptramirez-eval-test.apigee.net"
 		},
 		{
-			"id": "fd6bb4f9-e40f-4d41-8239-7a3f5e1e7531",
+			"id": "49416495-1937-4b56-9ef5-fc7b7ecd0242",
 			"key": "client_id",
-			"value": " byMVko2zCRgyWtYcFszP3uhgO640mApG"
+			"value": "byMVko2zCRgyWtYcFszP3uhgO640mApG"
 		},
 		{
-			"id": "15dde7df-89c0-4bf0-b71c-1af43f63e919",
+			"id": "1c54d9a8-e102-4aec-bcb3-b67e65ed8068",
 			"key": "client_secret",
 			"value": "5nwWPSlXt4GAmXMI"
 		}
